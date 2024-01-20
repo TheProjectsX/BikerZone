@@ -11,16 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h1 class="page-title">Bike Zone</h1>
-
         <label for="ham-nav-open" class="ham-nav-opener">
           <img src="assets/icons/menu.svg" alt="Menu Icon" />
         </label>
         <input type="checkbox" id="ham-nav-open" hidden />
+
+        <h1 class="page-title">Bike Zone</h1>
 
         <div class="nav-links-container">
           <ul class="nav-links">
@@ -32,95 +33,106 @@
         </div>
 
         <button class="btn-primary">Login</button>
+
+        <div class="nav-links-container-ham">
+          <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
       </nav>
 
       <div class="header-section">
-        <div id="slider-1">
-          <div class="slide-item">
-            <div class="slide-text">
-              <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
-              <p class="slide-desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <button class="btn-primary">Purchase</button>
-            </div>
-            <div class="slide-image">
-              <img src="assets/slider/bike1.png" alt="Slide Bike" />
-            </div>
+        <div class="slider-container">
+          <div id="slider-1">
+            <div class="slide-item">
+              <div class="slide-text">
+                <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
+                <p class="slide-desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button class="btn-primary">Purchase</button>
+              </div>
+              <div class="slide-image">
+                <img src="assets/slider/bike1.png" alt="Slide Bike" />
+              </div>
 
-            <a href="#slider-4"
-              ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
-            /></a>
-            <a href="#slider-2"
-              ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
-            /></a>
+              <a href="#slider-4" class="arrow-left"
+                ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
+              /></a>
+              <a href="#slider-2" class="arrow-right"
+                ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
+              /></a>
+            </div>
           </div>
-        </div>
-        <div id="slider-2">
-          <div class="slide-item">
-            <div class="slide-text">
-              <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
-              <p class="slide-desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <button class="btn-primary">Purchase</button>
-            </div>
-            <div class="slide-image">
-              <img src="assets/slider/bike2.png" alt="Slide Bike" />
-            </div>
+          <div id="slider-2">
+            <div class="slide-item">
+              <div class="slide-text">
+                <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
+                <p class="slide-desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button class="btn-primary">Purchase</button>
+              </div>
+              <div class="slide-image">
+                <img src="assets/slider/bike2.png" alt="Slide Bike" />
+              </div>
 
-            <a href="#slider-1"
-              ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
-            /></a>
-            <a href="#slider-3"
-              ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
-            /></a>
+              <a href="#slider-1" class="arrow-left"
+                ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
+              /></a>
+              <a href="#slider-3" class="arrow-right"
+                ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
+              /></a>
+            </div>
           </div>
-        </div>
-        <div id="slider-3">
-          <div class="slide-item">
-            <div class="slide-text">
-              <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
-              <p class="slide-desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <button class="btn-primary">Purchase</button>
-            </div>
-            <div class="slide-image">
-              <img src="assets/slider/bike3.png" alt="Slide Bike" />
-            </div>
+          <div id="slider-3">
+            <div class="slide-item">
+              <div class="slide-text">
+                <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
+                <p class="slide-desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button class="btn-primary">Purchase</button>
+              </div>
+              <div class="slide-image">
+                <img src="assets/slider/bike3.png" alt="Slide Bike" />
+              </div>
 
-            <a href="#slider-2"
-              ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
-            /></a>
-            <a href="#slider-4"
-              ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
-            /></a>
+              <a href="#slider-2" class="arrow-left"
+                ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
+              /></a>
+              <a href="#slider-4" class="arrow-right"
+                ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
+              /></a>
+            </div>
           </div>
-        </div>
-        <div id="slider-4">
-          <div class="slide-item">
-            <div class="slide-text">
-              <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
-              <p class="slide-desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <button class="btn-primary">Purchase</button>
-            </div>
-            <div class="slide-image">
-              <img src="assets/slider/bike4.png" alt="Slide Bike" />
-            </div>
+          <div id="slider-4">
+            <div class="slide-item">
+              <div class="slide-text">
+                <h3 class="slide-title">Ride-on r15 V4 with Smile</h3>
+                <p class="slide-desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+                <button class="btn-primary">Purchase</button>
+              </div>
+              <div class="slide-image">
+                <img src="assets/slider/bike4.png" alt="Slide Bike" />
+              </div>
 
-            <a href="#slider-3"
-              ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
-            /></a>
-            <a href="#slider-1"
-              ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
-            /></a>
+              <a href="#slider-3" class="arrow-left"
+                ><img src="assets/icons/arrow-left.svg" alt="Left Arrow"
+              /></a>
+              <a href="#slider-1" class="arrow-right"
+                ><img src="assets/icons/arrow-right.svg" alt="Right Arrow"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -129,7 +141,7 @@
     <main>
       <!-- Featured Bikes -->
       <section class="featured-bikes">
-        <h3 class="section-title">Fetured Bikes In This Year</h3>
+        <h3 class="section-title">Featured Bikes In This Year</h3>
         <p class="featured-bikes-desc">Best bike collection</p>
 
         <div class="featured-image-container">
