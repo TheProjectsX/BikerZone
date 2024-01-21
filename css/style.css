@@ -46,7 +46,15 @@ section {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    color: var(--color-primary);
+}
+
+.featured-bikes .section-title {
+    margin-bottom: 0;
 }
 
 .featured-bikes-desc {
@@ -189,6 +197,217 @@ nav {
     margin-block: 20px;
 }
 
+/* Latest News */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.news-item {
+    max-width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px #00000026;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.news-item .item-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 8px;
+}
+
+.news-item .item-desc {
+    color: #6C6C6C;
+    font-size: 1rem;
+    line-height: 200%;
+    margin-bottom: 12px;
+}
+
+
+/* Client Review */
+.client-review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-item {
+    max-width: 310px;
+    border-radius: 8px;
+    border: 1px solid #DEDEDE;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.review-item>img {
+    max-width: 140px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.review-item .item-desc {
+    color: #6C6C6C;
+    font-size: 1rem;
+    line-height: 200%;
+    margin-bottom: 10px;
+}
+
+.review-item .ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.review-item .ratings img {
+    width: 20px;
+}
+
+/* pass = passion */
+.review-item .user-name,
+.review-item .user-pass {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 170%;
+}
+
+.review-item .user-name {
+    color: #23A6F0;
+    margin-bottom: 15px;
+
+}
+
+/* FAQ */
+.faq-sect-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.faq-sect-container>div {
+    max-width: 500px;
+}
+
+.faq .section-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq .section-image-container img {
+    width: 80%;
+}
+
+.faq-item {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #D5E5FB;
+    margin-bottom: 15px;
+}
+
+.faq-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 1.1rem;
+    color: #383838;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+
+.faq-label img {
+    transition: transform 0.3s;
+}
+
+.faq-desc {
+    font-size: 0.9rem;
+    line-height: 175%;
+    color: #7E848C;
+    width: 92%;
+    overflow: hidden;
+}
+
+.faq-desc-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s;
+}
+
+/* Open Answer when Radio Button is Checked */
+.faq-open:checked~.faq-desc-container {
+    grid-template-rows: 1fr;
+}
+
+.faq-open:checked~.faq-label img {
+    transform: rotate(180deg);
+}
+
+/* Footer */
+footer {
+    background-color: #0B0D17;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.links-container a {
+    color: white;
+    text-decoration: none;
+    padding: 4px 8px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.links-container>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.copyright {
+    padding-inline: 8px;
+}
+
+.app-links h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 155%;
+    margin-bottom: 15px;
+}
+
+.app-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.app-links-container img {
+    width: 130px;
+}
+
+
+
 
 /* Media Queries */
 
@@ -205,6 +424,15 @@ nav {
         margin-inline: auto;
     }
 
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links-container>div {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -246,5 +474,9 @@ nav {
 
     .slide-title {
         font-size: 1.6rem;
+    }
+
+    .faq-label {
+        gap: 8px;
     }
 }
